@@ -140,7 +140,7 @@ struct Matrix: public Expression<Matrix<dt> > {
 	dt getElement(int x, int y ) const{
 		return mat[x][y];	
 	};
-	void putElement(int x, int y, int val)
+	void putElement(int x, int y, dt val)
 	{
 		ASSERT_EX ( x < r and x >=0  and y < c and y >= 0,
 		std :: cerr << " Addition of a value to a non existing location" );
