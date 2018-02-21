@@ -170,6 +170,7 @@ struct Matrix: public Expression<Matrix<dt> > {
 		dt ret;
 		for ( int i = 0; i < r; i ++)
 		{
+			m[i].resize(ss[0].size());
 			for ( int j = 0; j < ss[0].size(); j ++)
 			{
 				ret = 0;
